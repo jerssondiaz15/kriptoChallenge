@@ -1,6 +1,7 @@
 plugins {
-    alias(libs.plugins.androidLibrary)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
 }
 
 android {
@@ -33,11 +34,15 @@ android {
 }
 
 dependencies {
+    implementation(libs.bundles.retrofit2)
+    implementation(libs.bundles.library.implements)
+    kapt(libs.bundles.kapt)
+    testImplementation(libs.bundles.test)
+    androidTestImplementation(libs.bundles.library.androidTest)
+    androidTestImplementation(libs.bundles.retrofit2)
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    kaptAndroidTest(libs.bundles.kapt)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+    implementation(project(":domain"))
 }
