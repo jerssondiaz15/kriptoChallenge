@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">kriptoChallenge</string>
+    <string name="insert_application">Insertar Aplicación</string>
+    <string name="application_name">Nombre de la Aplicación</string>
+    <string name="category">Categoría</string>
+    <string name="frequency_user">Frecuencia de Uso</string>
+    <string name="cpu_usage">Consumo de CPU (%)</string>
+    <string name="memory_consumption">Consumo de Memoria (MB)</string>
+    <string name="last_update">Última Actualización</string>
+    <string name="description">Descripción</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="application_details">Detalles de la Aplicación</string>
+
+    <string name="name">Nombre:</string>
+    <string name="category_point">Categoría:</string>
+    <string name="frequency_user_point">Frecuencia de Uso:</string>
+    <string name="cpu_usage_point">Consumo de CPU:</string>
+    <string name="memory_consumption_point">Consumo de Memoria:</string>
+    <string name="last_update_point">Última Actualización:</string>
+    <string name="description_point">Descripción:</string>
+    <string name="delete">Eliminar</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="resource_consumption_chart">Gráfico de Consumo de Recursos (placeholder)</string>
+    <string name="application_table">Tabla de Aplicaciones</string>
+    <string name="recommendations">Recomendaciones</string>
+
+    <string name="add_application">Agregar Aplicación</string>
+
+    <string name="view_dashboard">Ver Dashboard</string>
+    <string name="configuration">Configuración</string>
+    <string name="activate_alerts">Activar Alertas</string>
+
+    <string name="CPU_threshold">Umbral de CPU (%)</string>
+    <string name="update_frequency">Frecuencia de Actualización (min)</string>
 </resources>
